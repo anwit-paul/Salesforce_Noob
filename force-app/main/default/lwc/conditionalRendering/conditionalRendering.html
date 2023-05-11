@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="Narrow" title="Conditional Rendering" icon-name="standard:account">
+        <lightning-checkbox-group name="Checkbox Group" label="Checkbox Group" options={options} value={value}
+            onchange={handleChange}></lightning-checkbox-group>
+        <template if:true={showMe}>
+            Template: I am visible
+        </template>
+        <template if:false={showMe}>
+            Template: I am not visible
+        </template>
+        <p>Selected Values are: {selectedValues}</p>
+    </lightning-card>
+</template>

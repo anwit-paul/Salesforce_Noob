@@ -1,0 +1,8 @@
+<template>
+    <lightning-card variant="Narrow" title="Parent" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" value={percentage} onchange={handleOnChange}></lightning-input>
+            <c-childofp2cusingapi percentage={percentage}></c-childofp2cusingapi>
+        </div>        
+    </lightning-card>
+</template>

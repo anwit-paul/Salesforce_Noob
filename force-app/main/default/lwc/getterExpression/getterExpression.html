@@ -1,0 +1,10 @@
+<template>
+    <lightning-card variant="Narrow" title="Getter Expression" icon-name="standard:account">
+        <p class="slds-p-horizontal_small">Hello, {upperCase}</p><br>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" name="FirstName" label="FirstName" onchange={handleChange}></lightning-input>
+            <br>
+            <lightning-input type="text" name="LastName" label="LastName" onchange={handleChange}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
